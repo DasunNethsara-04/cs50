@@ -57,9 +57,9 @@ Here are all the core concepts that covers in ***Week 1 - C***
 
 ## Problem Sets
 
-1. In a file called hello.c, in a folder called me, implement a program in C that prompts the user for their name and then says hello to that user. For instance, if the user’s name is Adele, your program should print hello, Adele\n!
+1. In a file called `hello.c`, in a folder called `me`, implement a program in C that prompts the user for their name and then says hello to that user. For instance, if the user’s name is Adele, your program should print hello, Adele\n!
 
-2. In a file called mario.c in a folder called mario-less, implement a program in C that recreates that pyramid, using hashes (#) for bricks, as in the below:
+2. In a file called `mario.c` in a folder called `mario-less`, implement a program in C that recreates that pyramid, using hashes (#) for bricks, as in the below:
 
 ```bash
        #
@@ -72,7 +72,7 @@ Here are all the core concepts that covers in ***Week 1 - C***
 ########
 ```
 
-3. In a file called mario.c in a folder called mario-more, implement a program in C that recreates that pyramid, using hashes (#) for bricks, as in the below:
+3. In a file called `mario.c` in a folder called `mario-more`, implement a program in C that recreates that pyramid, using hashes (#) for bricks, as in the below:
 
 ```bash
    #  #
