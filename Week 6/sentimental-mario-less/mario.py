@@ -1,44 +1,37 @@
 
+
 def run() -> None:
 
-    while True:
-        height: int = get_input()
-        if not isinstance(height, int):
-            height: int = get_input()
-        else:
-            if height > 8 or height < 1:
-                continue
-            break
+    height = get_input()
 
     for i in range(height):
-        makeBlocks(height - i - 1, i+1)
+        makeBlocks(height - i - 1, i + 1)
 
 
 def makeBlocks(spaces: int, bricks: int) -> None:
-    # print spaces
-    for i in range(spaces):
-        print(" ", end='')
+    # first method
+    # # print spaces
+    # for i in range(spaces):
+    #     print(" ", end='')
 
-    # print bricks (#)
-    for i in range(bricks):
-        print("#", end='')
+    # # print bricks (#)
+    # for i in range(bricks):
+    #     print("#", end='')
 
-    print()
+    # print()
+
+    # simplified method
+    print(" " * spaces + "#" * bricks)
 
 
 def get_input() -> int:
-    height = None
-    user_input = input("Height: ")
-    try:
-        while True:
-            height = int(user_input)
-            if isinstance(height, int):
-                break
-            else:
-                user_input = input("Height: ")
-                continue
-    finally:
-        return height
+    while True:
+        try:
+            height = int(input("Height: "))
+            if height < 9 and height > 0:
+                return height
+        except ValueError:
+            pass
 
 
 if __name__ == "__main__":
